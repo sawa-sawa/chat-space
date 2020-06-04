@@ -11,7 +11,6 @@
 ### Association
 - has many :groups_users
 - has many :groups, through: :groups_users
-- has many :messages
 
 ## groupsテーブル
 
@@ -22,7 +21,6 @@
 ### Association
 - has many :groups_users
 - has many :users, through: :groups_users
-- has many :messages
 
 ## groups_usersテーブル
 
