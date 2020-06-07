@@ -12,7 +12,6 @@
 .Side_bar{
   width: 300px;
   background-color: #253141;
-  // display: block;
   &__user-name{
     height: 100px;
     display: flex;
@@ -29,7 +28,6 @@
           font-weight: bold;
         }
         &__icons{
-          // background-color: cornflowerblue;
           width: 60px;
           height: 20px;
           display: flex;
@@ -38,8 +36,6 @@
             display: flex;
             align-items: center;
             text-decoration: none;
-            // width: 20px;
-            // height: 20px;
             margin-left: 5px;
             &--icon{
               color: #ffffff;
@@ -53,7 +49,6 @@
     background-color: #2f3e51;
     padding: 0 20px;
     &__group{
-      // display: block;
       color: #ffffff;
       padding: 20px 0px 40px;
       &__name{
