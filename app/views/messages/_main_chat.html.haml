@@ -1,0 +1,34 @@
+.Chat_main
+  .Chat_main__group-info
+    .Chat_main__group-info__group
+      .Chat_main__group-info__group__group-name
+        test
+      .Chat_main__group-info__group__group-member
+        Member：masa
+    .Chat_main__group-info__edit
+      = link_to "#", class: "Chat_main__group-info__edit__btn" do
+        Edit
+  .Chat_main__message-list
+    .Chat_main__message-list__member
+      .Chat_main__message-list__member__name
+        masa
+      .Chat_main__message-list__member__date
+        2019/11/20(Wed) 17:43:01
+    .Chat_main__message-list__message
+      おはよう！
+    .Chat_main__message-list__member
+      .Chat_main__message-list__member__name
+        masa
+      .Chat_main__message-list__member__date
+        2019/11/20(Wed) 17:43:34
+    .Chat_main__message-list__message
+      今夜は夜から雨
+  .Chat_main__message-form
+    = form_with url:"#", class:"Chat_main__message-form__input-contents" do |form|
+      .Chat_main__message-form__input-contents__new-message
+        = form.text_field :text, class:"Chat_main__message-form__input-contents__new-message__text", placeholder: "type a message"
+        .Chat_main__message-form__input-contents__new-message__picture
+          %label{class: "Chat_main__message-form__input-contents__new-message__picture__btn"}
+            = icon('far', 'image', class: "Chat_main__message-form__input-contents__new-message__picture__btn__icon")
+            %input{type:"file", class: "Chat_main__message-form__input-contents__new-message__picture__btn__link"}
+      = form.submit 'Send',class:"Chat_main__message-form__input-contents__submit-btn"
