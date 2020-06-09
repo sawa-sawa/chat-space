@@ -45,7 +45,7 @@
     }
   }
   &__group-list{
-    height: calc(100% - 100px);
+    height: calc(100vh - 100px);
     background-color: #2f3e51;
     padding: 0 20px;
     &__group{
@@ -55,11 +55,12 @@
         display: block;
         font-size: 15px;
         margin-bottom: 5px;
+        text-decoration: none;
+        color: #ffffff;
       }
       &__message{
         display: block;
         font-size: 11px;
-
       }
     }
   }
